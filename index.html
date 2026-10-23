@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Daily Goals</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header class="header">
+
+        <h1>Daily Goals</h1>
+
+        <p>Small steps. Every single day.</p>
+
+    </header>
+
+
+
+    <main class="container">
+
+
+        <!-- =========================
+             STATS
+        ========================== -->
+
+        <section class="stats">
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    🔥
+                </div>
+
+                <p>Current Streak</p>
+
+                <strong id="streakText">
+                    0 days
+                </strong>
+
+            </div>
+
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    🎯
+                </div>
+
+                <p>Completion</p>
+
+                <strong id="progressText">
+                    0%
+                </strong>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =========================
+             GOALS
+        ========================== -->
+
+        <section class="goals-section">
+
+
+            <div class="section-header">
+
+                <h2>Today's Goals</h2>
+
+                <span id="goalCount">
+                    0 goals
+                </span>
+
+            </div>
+
+
+            <!-- ADD GOAL -->
+
+            <div class="add-goal">
+
+                <input
+                    type="text"
+                    id="goalInput"
+                    placeholder="Enter a new goal..."
+                >
+
+                <button id="addButton">
+                    Add Goal
+                </button>
+
+            </div>
+
+
+            <!-- GOALS WILL BE CREATED HERE -->
+
+            <div id="goals"></div>
+
+
+        </section>
+
+
+
+        <!-- =========================
+             PROGRESS
+        ========================== -->
+
+        <section class="progress-section">
+
+
+            <div class="progress-header">
+
+                <h2>Today's Progress</h2>
+
+                <span id="progressPercentage">
+                    0%
+                </span>
+
+            </div>
+
+
+            <div class="progress-bar">
+
+                <div
+                    class="progress"
+                    id="progressBar">
+                </div>
+
+            </div>
+
+
+            <p id="progressDetails">
+                0 of 0 goals completed
+            </p>
+
+
+        </section>
+
+
+
+        <!-- =========================
+             AFFIRMATION
+        ========================== -->
+
+        <section class="affirmation">
+
+
+            <h2 id="affirmationTitle">
+                💪 Keep Going!
+            </h2>
+
+
+            <p id="affirmation">
+                Every completed goal is a step toward
+                the person you want to become.
+            </p>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script src="scr.js"></script>
+
+
+</body>
+
+</html>
